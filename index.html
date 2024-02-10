@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss-css/styles.css">
+    <link rel="stylesheet" href="./assets/scss-css/reset.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shoe Cart</title>
+</head>
+<body>
+    <header>
+      <section class="hdr">
+        <div class="headerLeft">
+            <li><img src="./assets/images/nike-512.png" alt=""></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Recent Arrivals</a></li>
+        </div>
+        <div class="headerRight">
+            <li style="padding-top: 3px;"><i class="fa fa-search fa-top-search" aria-hidden="false"></i></li>
+             <li><a href="#">search</a></li>
+            <li style="padding-left: 20px;"><i class="fa fa-shopping-cart" aria-hidden="false" style="width: 20px; font-size: 18px;"></i></li>
+             <div class="burger">
+                <div class="bChild"></div>
+                <div class="bChild2"></div>
+                <div class="bChild3"></div>
+             </div>
+        </div>
+      </section>
+    </header>
+    <div class="hero">
+        <div class="heroLeft">
+            <h3 class="use">RUNNING SHOES</h3>
+            <h1 class="shoesTitle">NEW NIKE <br> AIR VAPORMAX</h1>
+            <p class="shoeDescription">Over Seven years in the making, the Nike Air <br> VaporMax Flyknit 2 Safari places your foot directly <br> on Nike Air technology</p>
+            <section>
+                 <select>
+                    <option>QNT 1</option>
+                    <option>2</option>
+                    <option>3</option>
+                 </select>
+                 <select class="sel2">
+                    <option>SIZE</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                 </select>
+                 <div class="btn-set">
+                 <button class="prix price" id="prix1">$500</button>
+                 </div>
+            </section>
+            <section class="rad">
+                <span>COLOR</span>
+                <input type="radio" name="main" id="rad1" onclick="newColor('yellow','yellow','yellow','yellow','2px solid yellow')">
+                <input type="radio" name="main" id="rad2" onclick="newColor('blue','blue','blue','blue','2px solid blue')">
+                <input type="radio" name="main" id="rad3" onclick="newColor('grey','grey','grey','grey','2px solid grey')">
+                <input type="radio" name="main" id="rad4" onclick="newColor('red','red','red','red','2px solid red')">
+                <div><button>add to cart</button></div>
+                <p>FREE SNIPPING AND FREE RETURNS </p>
+            </section>
+        </div>
+        <div class="heroRight">
+            <section class="leftHeroChild1">
+                <h1 class="bg_name">NIKE</h1>
+                <div class="shoes_box"><img class="diff" src="assets/images/air-vapormax.png"></div>
+            </section>
+            <section class="leftHeroChild2">
+                <div class="choice1" onclick="changeImage('assets/images/air-vapormax.png','NEW NIKE <br> AIR VAPORMAX','Over Seven years in the making, the Nike Air <br> VaporMax Flyknit 2 Safari places your foot directly <br> on Nike Air technology','$500')"><img  id="item1" src="assets/images/air-vapormax.png"> </div>
+                <div class="choice2"  onclick="changeImage('assets/images/air-vapormax2.png','NEW NIKE <br> AIR VAPORMAX PRO 11','Our customers aknowledge the beauty of it.','$200')"><img  id="item2" src="assets/images/air-vapormax2.png"></div>
+                <div class="choice3"  onclick="changeImage('assets/images/air-vapormax3.png','NEW NIKE <br> AIR VAPORMAX PRO 12','It is no surprise that people take it as camping shoe','$400')"><img  id="item3" src="assets/images/air-vapormax3.png"></div>
+                <div class="choice4"><img  onclick="changeImage('assets/images/air-vapormax4.png','NEW NIKE <br> AIR VAPORMAX PRO 14','The fitting of the leg is astonishing.','$900')" id="item4" src="assets/images/air-vapormax4.png"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
