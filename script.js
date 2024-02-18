@@ -61,6 +61,8 @@
     document.querySelector("bg_name").style.color = bg_name;
 };
  
+// Img slider
+
     // var btn_switch = document.querySelector("choice2");
 
     // btn_switch.addEventListener("click", function(){

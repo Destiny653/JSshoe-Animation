@@ -1,26 +1,5 @@
-
-@mixin EleWH($w,$h){
-    width: $w;
-    height: $h;
-}
-// @mixin group($w) {
-//     max-width: $w;
-//     margin: 0 auto;
-// }
-// @mixin EleSpacerPM($p,$m) {
-//     padding: $p;
-//     margin: $m;
-// }
-
-// @mixin EleBoxsize() {
-//     -webkit-box-sizing: border-box;
-//     -moz-box-sizing: border-box;
-//     box-sizing: border-box;
-// }
-// @mixin EleBoxshadow() {
-//     -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, .1);
-//       box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, .1);
-// }
+//  flex
+ 
 @mixin EleflexGap($f,$g){
     display: $f;
     gap: $g;
